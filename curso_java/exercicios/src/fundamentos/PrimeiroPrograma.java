@@ -3,6 +3,8 @@ package fundamentos;
 public class PrimeiroPrograma {
 
 	public static void main(String[] args) {
-		System.out.println("Hello World!!!");
+		System.out.println("Primeiro programa parte #01");
+		System.out.println("Primeiro programa parte #02");
+
 	}
 }
