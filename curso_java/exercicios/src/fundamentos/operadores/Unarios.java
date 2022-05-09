@@ -23,7 +23,7 @@ public class Unarios {
 		System.out.println(b);
 		/* Por precedência a forma pré fixada tem maior precedência do que comparação ou pós fixada
 		 ou seja, no exemplo abaixo ele primeiro incrementa o a, depois compara a com b, retornando true
-		 e depois decrementa o b
+		 e depois decrementa o b.
 		 */
 		System.out.println("Mini Desafio...");
 		System.out.println(++a == b--);
