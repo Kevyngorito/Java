@@ -1,4 +1,4 @@
-package fundamentos;
+package fundamentos.tipos;
 
 import java.util.Scanner;
 
