@@ -35,6 +35,8 @@ public class Console {
 		String sobrenome = entrada.nextLine();//nextLine é usado por retornar uma String
 		
 		System.out.print("Digite a sua idade: ");
+		/* next é usado para retornar o input do usuário, utilizando a notação ponto dá para
+		navegar entre os tipos primitivos e escolher o retorno específico esperado */
 		int idade = entrada.nextInt();//nextInt é usado por retornar um inteiro
 
 		if (idade >= 18) {
@@ -45,8 +47,6 @@ public class Console {
 		}
 		
 		//System.out.println("\n\nNome digitado = " + nome.concat(" " + sobrenome));
-		
-		
 		
 		//Este comando serve para FECHAR o Scanner, pois ele fica aberto ocupando recursos da máquina
 		entrada.close();
