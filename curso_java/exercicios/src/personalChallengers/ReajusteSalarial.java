@@ -12,7 +12,7 @@ public class ReajusteSalarial {
 		System.out.print("Informe o seu sobrenome: ");
 		String sobrenome = scan.nextLine();
 		System.out.print("Informe o seu salario: ");
-		String salario = scan.nextLine().replace(",", ".");
+		String salario = scan.nextLine();
 		
 		double salario1 = Double.parseDouble(salario);
 		double salMedio;
