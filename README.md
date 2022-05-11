@@ -1,4 +1,4 @@
-<div data-purpose="safely-set-inner-html:course-taking:course-description"><p>Seja muito bem vindo a este repositória que abordará os conhecimentos e estudos adquiridos no curso <strong>Java 2020 COMPLETO: Do Zero ao Profissional + Projetos!</strong></p>
+<div data-purpose="safely-set-inner-html:course-taking:course-description"><p>Seja muito bem vindo a este repositório. Ele tem como objetivo abordar os conhecimentos e estudos adquiridos no curso <strong>Java 2020 COMPLETO: Do Zero ao Profissional + Projetos!</strong></p>
   <p>O curso de <strong>Java 2020</strong> foi <strong>completamente refeito</strong> para se tornar o <strong>conteúdo de Java mais atualizado e completo da língua portuguesa!</strong> Neste repositório você poderá encontrar projetos e exercícios em Java do absoluto zero até um nível avançado de aplicações, dominando os recursos mais moderno da linguagem. Alguns dos assuntos abordados:</p>
   
   
