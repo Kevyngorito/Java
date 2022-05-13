@@ -5,25 +5,34 @@ import java.util.Scanner;
 public class FormulaDeBhaskara {
 
 	public static void main(String[] args) {
-		Scanner input = new Scanner (System.in);
+Scanner scanner = new Scanner(System.in);
 		
-		System.out.print("Informe o valor de A: ");
-		double valueA = input.nextDouble();
-		System.out.print("Informe o valor de B: ");
-		double valueB = input.nextDouble();
-		System.out.print("Informe o valor de C: ");
-		double valueC = input.nextDouble();
+		System.out.println("Equação: ax² + bx + c = 0");
 		
-		double valueB2 = Math.pow(valueB, 2);
-		double delta = valueB2 - (4 * valueA * valueC);
+		System.out.println("\nDigite o valor de A: ");
+		int a = scanner.nextInt();
+
+		System.out.println("\nDigite o valor de B: ");
+		int b = scanner.nextInt();
+
+		System.out.println("\nDigite o valor de C: ");
+		int c = scanner.nextInt();
+
+		//Utilizando (b * b) pois estamos utilizando int e não double para pow
+		int delta = (b * b) - (4 * a * c);
+
+		System.out.printf("\nSua equação é: %dx² + %dx + %d = 0", a, b, c);
 		
-		double raiz = Math.sqrt(delta);
+		System.out.println("\nO delta é: " + delta);
+
+		double x1 = (-b + Math.sqrt(delta)) / (2 * a);
+
+		System.out.printf("O x1 da equação é: %.2f", x1);
+
+		double x2 = (-b - Math.sqrt(delta)) / (2 * a);
+
+		System.out.printf("\nO x2 da equação é: %.2f" ,x2);
 		
-		double x = (-valueB2 +- raiz) / 2 * valueA; 
-		
-		System.out.printf("O valor de delta é %.2f e de  X é %.2f", delta, x);
-		
-		
-		input.close();
+		scanner.close();
 	}
 }
