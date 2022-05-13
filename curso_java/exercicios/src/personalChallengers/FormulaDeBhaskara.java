@@ -18,6 +18,7 @@ Scanner scanner = new Scanner(System.in);
 		System.out.println("\nDigite o valor de C: ");
 		int c = scanner.nextInt();
 
+		
 		//Utilizando (b * b) pois estamos utilizando int e não double para pow
 		int delta = (b * b) - (4 * a * c);
 
