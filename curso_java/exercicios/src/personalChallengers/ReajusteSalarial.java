@@ -8,21 +8,19 @@ public class ReajusteSalarial {
 		Scanner scan = new Scanner(System.in);
 		
 		System.out.print("Informe o seu nome: ");
-		String nome = scan.nextLine();
-		System.out.print("Informe o seu sobrenome: ");
-		String sobrenome = scan.nextLine();
+		String nome = scan.next();
 		System.out.print("Informe o seu salario: ");
-		String salario = scan.nextLine();
+		Double salario = scan.nextDouble();
 		
-		double salario1 = Double.parseDouble(salario);
-		double salMedio;
+		double ajuste10 = 10/100;
+		double ajuste5 = 5/100;
 		
-		if (salario1 < 1500) {
-			salMedio = salario1 * (10 / 100); 
-			System.out.printf(" %s %s Seu salário %f foi reajustado em 10%. Seu novo salário é %f", nome, sobrenome ,salario1, salMedio);
-		} else if (salario1 > 2000) {
-			salMedio = salario1 * (5 / 100); 
-			System.out.printf(" %s %s Seu salário %f foi reajustado em 5%. Seu novo salário é %f", nome, sobrenome ,salario1, salMedio);
+		if (salario < 1500) {
+			double salMedio = ajuste10 + salario;
+			System.out.printf(" %s %s Seu salário %f foi reajustado em 10%. Seu novo salário é %f", nome, salario, salMedio);
+		} else if (salario > 2000) {
+			double salMedio = ajuste5 + salario; 
+			System.out.printf(" %s %s Seu salário %f foi reajustado em 5%. Seu novo salário é %f", nome, salario, salMedio);
 		}
 		
 		
