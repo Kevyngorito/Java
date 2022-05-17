@@ -9,7 +9,7 @@ public class ContaBancariaComSwitch {
 		Scanner input = new Scanner (System.in);
 		
 		System.out.println("Informe seu nome: ");
-		String name = input.next();
+		String name = input.nextLine();
 		System.out.println("         Informe a conta desejada\n"
 				+ "[1] Corrente [2] Poupança [3] Salário [4] Universitária\n ");
 		
@@ -27,7 +27,7 @@ public class ContaBancariaComSwitch {
 			outAccount = 4;
 			transferAccount = 4;
 			extractAccount = 4;
-			System.out.println("Você terá acesso a 4 saques, 4 transferências e 4 extratos por mês.\n");
+			System.out.printf("Você terá acesso a %d  saques, %d transferências e %d extratos por mês.\n", outAccount,  transferAccount, extractAccount);
 			System.out.println("Bem vindo ao nosso banco, é muito por ter você conosco!");
 
 			break;
@@ -36,7 +36,7 @@ public class ContaBancariaComSwitch {
 			outAccount = 2;
 			transferAccount = 2;
 			extractAccount = 3;
-			System.out.println("Você terá acesso a 2 saques, 2 transferências e 3 extratos por mês.\n");
+			System.out.printf("Você terá acesso a %d saques, %d transferências e %d extratos por mês.\n", outAccount,  transferAccount, extractAccount);
 			System.out.println("Bem vindo ao nosso banco, é muito por ter você conosco!");
 
 			break;
@@ -45,7 +45,7 @@ public class ContaBancariaComSwitch {
 			outAccount = 2;
 			transferAccount = 0;
 			extractAccount = 1;
-			System.out.println("Você terá acesso a 2 saques, 0 transferências e 1 extratos por mês.\n");
+			System.out.printf("Você terá acesso a %d saques, %d transferências e %d extratos por mês.\n", outAccount,  transferAccount, extractAccount);
 			System.out.println("Bem vindo ao nosso banco, é muito por ter você conosco!");
 
 			break;
@@ -54,7 +54,7 @@ public class ContaBancariaComSwitch {
 			outAccount = 2;
 			transferAccount = 1;
 			extractAccount = 1;
-			System.out.println("Você terá acesso a 2 saques, 1 transferências e 1 extratos por mês.\n");
+			System.out.printf("Você terá acesso a %d saques, %d transferências e %d extratos por mês.\n",  outAccount,  transferAccount, extractAccount);
 			System.out.println("Bem vindo ao nosso banco, é muito por ter você conosco!");
 
 			break;	
