@@ -9,6 +9,8 @@ public class Continue {
 			if( i % 2 == 1) {
 				//imprimirá os valores ímpares dentro da repetição de 0 a 10
 				System.out.println(i); continue;
+				//Só entrará no continue se o if for = true, no caso a posição do FOR
+				// for ímpar
 			}
 		}
 	}
