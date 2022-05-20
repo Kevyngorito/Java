@@ -10,9 +10,9 @@ public class ControlChallenger1 {
 		int ano = entrada.nextInt();
 		
 		if(ano % 4 == 0) {
-			System.out.println("Este ano é um ano bissexto!");
+			System.out.printf("Este ano %d é um ano bissexto!", ano);
 		} else {
-			System.out.println("Este não é um ano bissexto!");
+			System.out.printf("Este ano %d não é um ano bissexto!", ano);
 		}
 		
 		entrada.close();
