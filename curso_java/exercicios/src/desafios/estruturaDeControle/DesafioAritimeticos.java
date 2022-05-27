@@ -1,4 +1,4 @@
-package desafios;
+package desafios.estruturaDeControle;
 
 public class DesafioAritimeticos {
 
