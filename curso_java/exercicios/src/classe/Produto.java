@@ -9,6 +9,17 @@ public class Produto {
 	//Não foi atribuído nenhum parâmetro para o método abaixo, pois os métodos necessários
 	//para calcular o desconto, que são preço e desconto, estão sendo herdados pelo objeto produto
 	//1 representa 100% de desconto
+	
+	Produto() {
+		
+	}
+	
+	Produto(String nomeInicial, double precoInicial, double descontoInicial) {
+		nome = nomeInicial;
+		preco = precoInicial;
+		desconto = descontoInicial;
+	}
+		
 	double precoComDesconto () {
 		return preco * (1 - desconto);
 	}

@@ -10,11 +10,15 @@ public class ProdutoTeste {
 		 é exatamente o nome da classe */
 		  
 		
-		
+		/*
 		Produto p1 = new Produto(); //chamando o construtor referindo a classe produto.
 		p1.nome = "Notebook";
 		p1.preco = 4356.89;
 		p1.desconto = 0.25;
+		
+		*/
+		//Refatorado dentro do construtor via parâmetro.
+		Produto p1 = new Produto ("Notebook",4356.89, 0.25);
 		
 		//a variável p2 receberá o tipo produto por inferência
 		var p2 = new Produto();
