@@ -6,10 +6,12 @@ public class AreaCirc {
 	//final cria uma constante static atribui a variável como sendo da classe e não do objeto
 	final static double PI = 3.1415;
 	
-	public AreaCirc(double raioInicial) {
+	//Construtor, não tem retorno esperado.
+	AreaCirc(double raioInicial) {
 		raio = raioInicial;
 	}
 	
+	//Método com retorno de um double.
 	double area() {
 		return PI * Math.pow(raio, 2);
 	}
