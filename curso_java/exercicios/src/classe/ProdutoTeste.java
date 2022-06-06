@@ -10,11 +10,15 @@ public class ProdutoTeste {
 		 é exatamente o nome da classe */
 		  
 		
-		
+		/*
 		Produto p1 = new Produto(); //chamando o construtor referindo a classe produto.
 		p1.nome = "Notebook";
 		p1.preco = 4356.89;
 		p1.desconto = 0.25;
+		
+		*/
+		//Refatorado dentro do construtor via parâmetro.
+		Produto p1 = new Produto ("Notebook",4356.89, 0.25);
 		
 		//a variável p2 receberá o tipo produto por inferência
 		var p2 = new Produto();
@@ -25,9 +29,11 @@ public class ProdutoTeste {
 		System.out.println(p1.nome);
 		System.out.println(p2.nome);
 		
-		
-		double precoFinal1 = p1.preco * (1 - p1.desconto);
-		double precoFinal2 = p2.preco * (1 - p2.desconto);
+		//Refatorando o calculo do preço final, utilizando o método criado para atribuição do cálculo
+		/*Quando a chamada contiver () esta chamará um método, se não tiver () então chamará um atributo
+		 No caso abaixo está chamando um método */
+		double precoFinal1 = p1.precoComDesconto(); //p1.preco * (1 - p1.desconto);
+		double precoFinal2 = p2.precoComDesconto(0.25); //p2.preco * (1 - p2.desconto);
 		double mediaCarrinho = (precoFinal1 + precoFinal2) / 2;
 		
 		System.out.printf("A média do carrinho = R$%.2f.", mediaCarrinho);
