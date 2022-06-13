@@ -26,6 +26,8 @@ public class ProdutoTeste {
 		p2.preco = 12.56;
 		
 		//Desconto por padrão setado na classe é 0.25% abaixo estamos setando o novo percentual para aplicação de desconto de 0.29%
+		/* O desconto não está mais sendo acessado a partir de uma instância, mas sim diretamente
+		 * através da classe.*/
 		Produto.desconto = 0.29;
 		
 		System.out.println(p1.nome + " " + p1.precoComDesconto());

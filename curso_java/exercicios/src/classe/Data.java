@@ -1,4 +1,4 @@
-package desafios.ClassesEMetodos;
+package classe;
 
 public class Data {
 
