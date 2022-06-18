@@ -6,23 +6,18 @@ public class Data {
 	int mes;
 	int ano;
 	
-	Data() {
-		dia = 1;
-		mes = 1;
-		ano = 1970;
+	public Data() {
+		
 	}
 	
-	Data(int dia, int mes, int ano) {
-		//this nesse contexto estará utilizando as variáveis de instância dia, mes e ano.
-		this.dia = dia;
-		this.mes = mes;
-		this.ano = ano;
+	public Data(int diaInicial, int mesInicial, int anoInicial) {
+		dia = diaInicial;
+		mes = mesInicial;
+		ano = anoInicial;
 	}
-	
-	
+
 	String obterDataFormatada() {
 		return String.format("%d/%d/%d", dia, mes, ano);
 		
 	}
-
 }
