@@ -18,16 +18,20 @@ public class ProdutoTeste {
 		
 		*/
 		//Refatorado dentro do construtor via parâmetro.
-		Produto p1 = new Produto ("Notebook",4356.89, 0.25);
+		Produto p1 = new Produto ("Notebook",4356.89);
 		
 		//a variável p2 receberá o tipo produto por inferência
 		var p2 = new Produto();
 		p2.nome = "Caneta Preta";
 		p2.preco = 12.56;
-		p2.desconto = 0.29;
 		
-		System.out.println(p1.nome);
-		System.out.println(p2.nome);
+		//Desconto por padrão setado na classe é 0.25% abaixo estamos setando o novo percentual para aplicação de desconto de 0.29%
+		/* O desconto não está mais sendo acessado a partir de uma instância, mas sim diretamente
+		 * através da classe.*/
+		Produto.desconto = 0.29;
+		
+		System.out.println(p1.nome + " " + p1.precoComDesconto());
+		System.out.println(p2.nome + " " + p2.precoComDesconto());
 		
 		//Refatorando o calculo do preço final, utilizando o método criado para atribuição do cálculo
 		/*Quando a chamada contiver () esta chamará um método, se não tiver () então chamará um atributo

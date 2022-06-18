@@ -4,7 +4,8 @@ public class Produto {
 
 	String nome;
 	double preco;
-	double desconto;
+	//Definindo desconto como sendo atributo da classe STATIC
+	static double desconto = 0.25;
 	
 	//Não foi atribuído nenhum parâmetro para o método abaixo, pois os métodos necessários
 	//para calcular o desconto, que são preço e desconto, estão sendo herdados pelo objeto produto
@@ -14,10 +15,13 @@ public class Produto {
 		
 	}
 	
-	Produto(String nomeInicial, double precoInicial, double descontoInicial) {
+	/*O desconto foi removido do construtor propositalmente por questão de clareza 
+	  Para que o mesmo fosse setado de forma explícita e caso não fosse setado, o desconto
+	  iria adotar o valor estático setado na classe, que seria de 0.25*/
+	
+	Produto(String nomeInicial, double precoInicial) {
 		nome = nomeInicial;
 		preco = precoInicial;
-		desconto = descontoInicial;
 	}
 		
 	double precoComDesconto () {
