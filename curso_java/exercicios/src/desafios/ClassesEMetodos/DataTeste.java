@@ -1,4 +1,4 @@
-package classe;
+package desafios.ClassesEMetodos;
 
 
 
@@ -9,14 +9,10 @@ public class DataTeste {
 	public static void main(String[] args) {
 		
 		Data year = new Data();
-		year.ano = 2017;
-		year.dia = 28;
-		year.mes = 04;
 		
-		Data year2 = new Data();
-		year2.ano = 2022;
-		year2.dia = 28;
-		year2.mes = 04;
+		
+		Data year2 = new Data(01,02,2022);
+		
 		
 		
 		
