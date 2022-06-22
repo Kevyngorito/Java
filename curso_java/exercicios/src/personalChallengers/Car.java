@@ -1,18 +1,28 @@
 package personalChallengers;
-
 public class Car {
 
 	String name;
 	String model;
 	int year;
 	boolean on = false;
-	int speed;
+	int speed = 0;
 	
-	Car(String name, String model, int year, int speed){
+	public  void delay() {
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException ie) {
+			Thread.currentThread().interrupt();
+		}
+	}
+	
+	Car(String name, String model, int year){
 		this.name = name;
 		this.model = model;
 		this.year = year;
-		this.speed = speed;
+	}
+	
+	Car() {
+		
 	}
 	
 	public String showCar() {
@@ -21,7 +31,7 @@ public class Car {
 	
 	String checkOnCar() {
 		if(!on) {
-		return	"The car is off";
+		return	"No, is off.";
 		} 
 		return speedUp();
 	}
@@ -35,7 +45,7 @@ public class Car {
 	
 	public String speedUp() {
 		this.speed += 45 ;
-		System.out.println("Vrum vrum speeding up...");
+		System.out.println("Yes i want. vrum vrum speeding up...");
 		return "Your current speed is: " + this.speed + " Km\\h";
 		
 	}
@@ -55,6 +65,18 @@ public class Car {
 		this.speed -= 15;
 		System.out.println("Stepping on the brake...");
 		return "The is slowing down, current speed is: " + this.speed + " Km\\h";
+	}
+	
+	public String forcedBrake() {
+		this.speed -= 15;
+		if(this.speed < 0) {
+			this.speed = 0;
+			System.out.println("Stepping on the brake...");
+		}
+		return "The is slowing down, current speed is: " + this.speed + " Km\\h";
+
+		
+		
 	}
 	
 	
