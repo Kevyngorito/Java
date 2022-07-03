@@ -3,7 +3,7 @@ package personalChallengers;
 import java.util.Scanner;
 
 public class BuzzyOne {
-
+ 
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);
