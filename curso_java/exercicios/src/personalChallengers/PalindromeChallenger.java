@@ -22,11 +22,11 @@ public class PalindromeChallenger {
 		for(int i = 0; i < word.length(); i++) {
 			pilha.push(word.charAt(i));
 		}
-		String wordInverse = "";
+		String wordReverse = "";
 		while(!pilha.isEmpty()) {
-			wordInverse += pilha.pop();
+			wordReverse += pilha.pop();
 		}
-		if(word.equalsIgnoreCase(wordInverse)) {
+		if(word.equalsIgnoreCase(wordReverse)) {
 			return true;
 		}
 			return false;
