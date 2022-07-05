@@ -7,7 +7,7 @@ public class PalindromeChallenger {
 
 	public static void main(String[] args) {		
 		Scanner in = new Scanner(System.in);
-		System.out.println("Please, wirte someone word: ");
+		System.out.println("Please type a word: ");
 		String entryUser = in.next();
 		printResult(entryUser);
 		in.close();
