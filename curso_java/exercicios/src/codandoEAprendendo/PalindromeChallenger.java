@@ -1,4 +1,4 @@
-package personalChallengers;
+package codandoEAprendendo;
 
 import java.util.Scanner;
 import java.util.Stack;
